@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
 body{
-    background: linear-gradient(to bottom, rgb(121, 228, 121), white);
-    background-repeat: none;
-    height: 100vh;
+    /* background: linear-gradient(to bottom, rgb(121, 228, 121), white); */
+    /* background-repeat: none; */
+    /* height: 100vh; */
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
