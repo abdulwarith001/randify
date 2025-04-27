@@ -8,3 +8,60 @@ body{
     font-weight: 300;
     font-style: normal;
 }
+
+import React,
+{
+useState
+}
+
+from "react";
+
+const App=()=> {
+    const [counter,
+    setCounter]=useState(1);
+
+    const handleClick=()=> {
+        if (counter < 10) {
+            setCounter(counter + 1);
+        }
+
+        else {
+            alert("Digits can't exceed ten");
+        }
+    }
+
+    ;
+
+    const handleClickReduce=()=> {
+        if (counter > 1) {
+            setCounter(counter - 1);
+        }
+
+        else {
+            alert("Digits cannot be less than one");
+        }
+    }
+
+    ;
+
+    return (<main className="flex items-center justify-center h-[100vh] flex-col" > <h1 className="text-4xl mb-4" > {
+            counter
+        }
+
+        </h1> <button onClick= {
+            handleClick
+        }
+
+        className="bg-orange-500 py-2 px-4 rounded-3xl mb-3"
+
+        > Click here to increase </button> <button onClick= {
+            handleClickReduce
+        }
+
+        className="bg-orange-500 py-2 px-4 rounded-3xl"
+        > Click here to decrease </button> </main>);
+}
+
+;
+
+export default App;
